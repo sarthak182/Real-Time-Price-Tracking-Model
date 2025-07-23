@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Canvas Test</title>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      width="400"
+      height="200"
+      style="border: 1px solid #000000"
+    ></canvas>
+    <script>
+      // Get the canvas element and its context
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext("2d");
+
+      // Draw a rectangle on the canvas
+      ctx.fillStyle = "red";
+      ctx.fillRect(50, 50, 300, 100);
+
+      // Draw some text
+      ctx.font = "20px Arial";
+      ctx.fillStyle = "white";
+      ctx.fillText("Hello Canvas!", 120, 120);
+    </script>
+  </body>
+</html>
